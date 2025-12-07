@@ -5,6 +5,8 @@
 > **Advanced Machine Learning for Fire Weather Index Prediction**  
 > Protecting Algerian Forests with AI-Powered Environmental Intelligence
 
+🎈 **[🚀 Try Live Demo](https://algerian-forest-fire-prediction-model-9mybmdtncdurwpvm2t5ag9.streamlit.app/)**
+
 ---
 
 ## 📋 Table of Contents
@@ -26,6 +28,18 @@
 - [Future Enhancements](#future-enhancements)
 - [Developer](#developer)
 - [License](#license)
+
+---
+
+## 🚀 Quick Links
+
+| Link | Description |
+|------|-------------|
+| 🎈 **[Live Demo](https://algerian-forest-fire-prediction-model-9mybmdtncdurwpvm2t5ag9.streamlit.app/)** | Try the application online (no installation required) |
+| 🐙 **[GitHub Repository](https://github.com/rnrahate/Algerian-Forest-Fire-Prediction-Model)** | Source code & documentation |
+| 📊 **[Dataset](Datasets/Algerian_forest_fires_dataset_CLEANED.csv)** | Download cleaned dataset |
+| 📓 **[Notebooks](.)** | Jupyter notebooks for data exploration & training |
+| 💼 **[LinkedIn](http://www.linkedin.com/in/aryan-rahate)** | Connect with the developer |
 
 ---
 
