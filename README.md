@@ -538,7 +538,7 @@ FWI Predictions & Risk Assessment
 **Aryan Rahate**  
 Data Scientist & Machine Learning Engineer
 
-📧 **Email**: [rahatearyan.ar23062004@gmail.com]  
+📧 **Email**: rahatearyan.ar23062004@gmail.com
 💼 **LinkedIn**: [linkedin.com/in/aryan-rahate](http://www.linkedin.com/in/aryan-rahate)  
 💻 **GitHub**: [github.com/rnrahate](https://github.com/rnrahate)  
 
