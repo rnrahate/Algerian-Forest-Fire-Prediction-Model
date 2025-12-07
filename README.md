@@ -1,5 +1,3 @@
-![Forest Fire Background](Datasets/forest_fire.jpeg)
-
 # 🔥 Algerian Forest Fire FWI Predictor
 
 > **Advanced Machine Learning for Fire Weather Index Prediction**  
