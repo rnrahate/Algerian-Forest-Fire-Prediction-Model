@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FWI Prediction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #020617;
+      padding: 24px;
+      border-radius: 12px;
+      width: 420px;
+    }
+    label {
+      font-size: 13px;
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border-radius: 6px;
+      border: 1px solid #334155;
+      background: #020617;
+      color: #e5e7eb;
+    }
+    button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background: #22c55e;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 16px;
+      padding: 10px;
+      background: #064e3b;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Forest Fire Weather Index</h2>
+
+  <form action="/predictdata" method="POST">
+
+    <label>Temperature</label>
+    <input type="number" step="any" name="Temperature" required>
+
+    <label>Relative Humidity</label>
+    <input type="number" step="any" name="RH" required>
+
+    <label>Wind Speed</label>
+    <input type="number" step="any" name="Ws" required>
+
+    <label>Rain</label>
+    <input type="number" step="any" name="Rain" required>
+
+    <label>FFMC</label>
+    <input type="number" step="any" name="FFMC" required>
+
+    <label>DMC</label>
+    <input type="number" step="any" name="DMC" required>
+
+    <label>ISI</label>
+    <input type="number" step="any" name="ISI" required>
+
+    <label>Classes</label>
+    <select name="Classes" required>
+      <option value="">Select</option>
+      <option value="0">Low [0]</option>  
+      <option value="1">High [1]</option>
+    </select>
+
+    <label>Region</label>
+    <select name="Region" required>
+      <option value="">Select</option>
+      <option value="0">Bejaia</option>
+      <option value="1">Sidi Bel Abbes</option>
+    </select>
+
+    <button type="submit">Predict</button>
+  </form>
+
+  {% if result is defined %}
+    <div class="result">
+      🔥 Predicted FWI: <strong>{{ result }}</strong>
+    </div>
+  {% endif %}
+</div>
+
+</body>
+</html>

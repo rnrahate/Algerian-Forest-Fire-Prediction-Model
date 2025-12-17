@@ -267,6 +267,23 @@ source algoRLE/Scripts/activate  # Windows: algoRLE\Scripts\activate.bat
 streamlit run app.py
 ```
 
+### Optional: Run as a Flask API (new)
+
+You can optionally run a lightweight Flask REST API for model inference (uses `application.py`). This provides a programmatic endpoint to get predictions from the trained model.
+
+Windows (PowerShell / CMD):
+
+```powershell
+# Install Flask if not already installed
+pip install flask
+
+# Set the FLASK_APP environment variable and run
+set FLASK_APP=application.py
+flask run
+```
+
+This will start a Flask development server (default: http://127.0.0.1:5000) exposing endpoints defined in `application.py` for model inference.
+
 **Expected Output:**
 ```
   You can now view your Streamlit app in your browser.
@@ -408,6 +425,7 @@ streamlit run app.py
 | Icon | Technology | Purpose |
 |------|-----------|---------|
 | 🎈 | **Streamlit** | Interactive web application framework |
+| 🧩 | **Flask** | Optional REST API backend for programmatic model inference |
 | 🎨 | **HTML/CSS** | Custom styling & animations |
 | 📝 | **Markdown** | Documentation & content |
 
